@@ -1,7 +1,8 @@
 ## Estudo de indicadores de saúde na predição de Diabetes e Pré-diabetes
 
 ### cd-ifsp-interdiscip
-Trabalho desenvolvido e apresentado para o t Trabalho Interdisciplinar do curso de Espec. Ciência de Dados no IFSP-Campinas - 2o Semestre 2023 
+Trabalho desenvolvido e apresentado para o Trabalho Interdisciplinar do curso de Espec. Ciência de Dados no IFSP-Campinas - 2o Semestre 2023.
+
 Disciplinas "Tecnologias de Big Data" e "Aprendizado de Máquina"
 
 ### Integrantes do Grupo: 
