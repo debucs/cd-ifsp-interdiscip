@@ -6,7 +6,7 @@ Trabalho desenvolvido e apresentado para o Trabalho Interdisciplinar do curso de
 Disciplinas "Tecnologias de Big Data" e "Aprendizado de Máquina"
 
 ### Integrantes do Grupo: 
-[Geovana](https://github.com//)<br>
+[Geovana Lopes Batista CP302170X](https://github.com//)<br>
 [Isabela Moreira Silva CP3021734](https://github.com//)<br>
 [Mateus Rodrigues Braga Nascimento CP3024261](https://github.com/debucs/)<br>
 
