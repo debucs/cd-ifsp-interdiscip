@@ -84,6 +84,10 @@ Education: grau de escolaridade
 Income: renda
 
 ---
+### Arquitetura de referencia
+
+![ Arquitetura de referencia do projeto.](/arquitetura/aws_arch2.png)
+---
 
 ### Algoritmos de Aprendizado de Máquina Estudados
 
