@@ -87,6 +87,13 @@ Income: renda
 ### Arquitetura de referencia
 
 ![ Arquitetura de referencia do projeto.](/arquitetura/aws_arch2.png)
+
+Utilizamos um bucket S3 para receber o arquivo original do dataset. Usando Cloud9 Terminal, descompactar e copiar para um segundo bucket o csv de interesse.
+Através do Athena, criamos um database no Glue que lê o arquivo csv como uma tabela. O database foi enriquecido com views que davam descrição aos temas.
+Através do Sagemaker, o dado bruto foi utilizado dentro de um notebook jupyter para treinamento e teste dos modelos estudado e apresentados.
+
+
+
 ---
 
 ### Algoritmos de Aprendizado de Máquina Estudados
