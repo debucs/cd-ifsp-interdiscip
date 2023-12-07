@@ -105,4 +105,10 @@ Através do Sagemaker, o dado bruto foi utilizado dentro de um notebook jupyter 
 ---
 
 ## Conclusões
-Apesar de todos os modelos terem alcançado uma acurácia e precisão muito boas, quando olhamos a matriz de confusão percebemos que ele apresenta um viés bastante alto para uma determinada categoria (no caso, não ter diabetes). Isso aconteceu porque os dados também apresentam um número muito maior de pessoas que não tem diabetes. No caso do nosso estudo é preferível que o modelo cometesse o erro do tipo I (falso positivo), pois isso leva as pessoas a procurarem ajuda médica. No caso do erro tipo II (falso negativo) as pessoas poderiam deixar de buscar ajuda médica pois acreditariam que está tudo certo com a saúde, quando na verdade não está e eles deveriam procurar ajuda. Considerando esses fatores, a Árvore de Decisão foi o modelo que chegou mais próximo da necessidade desse caso. Porém, ele ainda precisa ser aperfeiçoado para que haja uma diminuição do erro do tipo II.
+
+Apesar de todos os modelos terem alcançado uma acurácia e precisão muito boas, quando olhamos a matriz de confusão percebemos que ele apresenta um viés bastante alto para uma determinada categoria (no caso, não ter diabetes). Isso aconteceu porque os dados também apresentam um número muito maior de pessoas que não tem diabetes.
+
+No caso do nosso estudo é preferível que o modelo cometesse o erro do tipo I (falso positivo), pois isso leva as pessoas a procurarem ajuda médica. No caso do erro tipo II (falso negativo) as pessoas poderiam deixar de buscar ajuda médica pois acreditariam que está tudo certo com a saúde, quando na verdade não está e eles deveriam procurar ajuda.
+Considerando esses fatores, a Árvore de Decisão foi o modelo que chegou mais próximo da necessidade desse caso. Porém, ele ainda precisa ser aperfeiçoado para que haja uma diminuição do erro do tipo II.
+
+Futuramente pretendemos tentar novos modelos (na literatura está descrito que redes neurais dão melhores resultados neste tipo de situação), além de tentar equilibrar melhor a distribuição dos dados, para que o modelo não fique enviesado para um resultado específico. Depois de aperfeiçoado o modelo, pretendemos expandi-lo para outras doenças crônicas. 
