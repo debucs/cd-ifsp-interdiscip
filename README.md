@@ -84,7 +84,7 @@ Education: grau de escolaridade
 Income: renda
 
 ---
-### Arquitetura de referencia
+### Arquitetura utilizada
 
 ![ Arquitetura de referencia do projeto.](/arquitetura/aws_arch2.png)
 
