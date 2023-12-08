@@ -1,0 +1,17 @@
+-- listar conteudo de bucket s3
+aws s3 ls s3://ifsp-cd-interdisciplinar
+
+-- baixar arquivo zip do s3
+aws s3 cp s3://ifsp-cd-interdisciplinar/archive.zip /home/ec2-user/environment
+
+-- descompactar zip
+unzip archive.zip
+
+-- copiar aquivo para bucket s3
+aws s3 cp diabetes_binary_health_indicators_BRFSS2015.csv s3://ifsp-cd-interdisciplinar
+aws s3 cp diabetes_binary_5050split_health_indicators_BRFSS2015.csv s3://ifsp-cd-interdisciplinar
+aws s3 cp diabetes_012_health_indicators_BRFSS2015.csv s3://ifsp-cd-interdisciplinar
+
+
+-- listar conteudo de bucket s3
+aws s3 ls s3://ifsp-cd-interdisciplinar
