@@ -1,4 +1,4 @@
--- listar conteudo de bucket s3
+-- listar conteudo de bucket s3 landing
 aws s3 ls s3://ifsp-cd-interdisciplinar
 
 -- baixar arquivo zip do s3
