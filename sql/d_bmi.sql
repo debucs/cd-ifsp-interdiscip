@@ -1,11 +1,9 @@
 create view d_bmi as
-select distinct bmi
-    ,case 
-        when bmi < 18.5 then 'Abaixo do peso'
-        when bmi < 25 then 'Peso normal'
-        when bmi < 30 then 'Sobrepeso'
-        when bmi < 35 then 'Obesidade grau I'
-        when bmi < 40 then 'Obesidade grau II'
-        else 'Obesidade grau III' end as IMC_desc
+select -1 as bmi_id, 'N/A' as bmi_desc
+    union select 1, 'Abaixo do peso'
+    union select 2, 'Peso normal'
+    union select 3, 'Sobrepeso'
+    union select 4, 'Obesidade grau I'
+    union select 5, 'Obesidade grau II'
+    union select 6, 'Obesidade grau III'
 from diabetes
-order by 1
