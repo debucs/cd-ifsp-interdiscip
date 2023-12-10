@@ -1,29 +1,30 @@
-CREATE EXTERNAL TABLE IF NOT EXISTS `diabetes_data`.`diabetes` (
-  `Diabetes_012` int,
-  `HighBP` int,
-  `HighChol` int,
-  `CholCheck` int,
-  `BMI` int,
-  `Smoker` int,
-  `Stroke` int,
-  `HeartDiseaseorAttack` int,
-  `PhysActivity` int,
-  `Fruits` int,
-  `Veggies` int,
-  `HvyAlcoholConsump` int,
-  `AnyHealthcare` int,
-  `NoDocbcCost` int,
-  `GenHlth` int,
-  `MentHlth` int,
-  `PhysHlth` int,
-  `DiffWalk` int,
-  `Sex` int,
-  `Age` int,
-  `Education` int,
-  `Income` int
-) COMMENT "dataset com indicadores de saude para deteccao de diabetes"
-ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe'
-WITH SERDEPROPERTIES ('field.delim' = ',')
-STORED AS INPUTFORMAT 'org.apache.hadoop.mapred.TextInputFormat' OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat'
-LOCATION 's3://ifsp-cd-interdisciplinar/table_diabetes/'
-TBLPROPERTIES ('classification' = 'csv');
+CREATE EXTERNAL TABLE IF NOT EXISTS `diabetes`.`diabetes` (
+  `diabetes_012` int,
+  `highbp` int,
+  `highchol` int,
+  `cholcheck` int,
+  `bmi` float,
+  `bmi_id` int,
+  `smoker` int,
+  `stroke` int,
+  `heartdiseaseorattack` int,
+  `physactivity` int,
+  `fruits` int,
+  `veggies` int,
+  `hvyalcoholconsump` int,
+  `anyhealthcare` int,
+  `nodocbccost` int,
+  `genhlth` int,
+  `menthlth` int,
+  `physhlth` int,
+  `diffwalk` int,
+  `sex` int,
+  `age` int,
+  `education` int,
+  `income` int
+) COMMENT "Tabela principal - modelo de dados diabetes"
+ROW FORMAT SERDE 'org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe'
+STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat' 
+OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat'
+LOCATION 's3://ifsp-cd-raw/diabetes/'
+TBLPROPERTIES ('classification' = 'parquet');
